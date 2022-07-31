@@ -36,9 +36,9 @@ const ocSlider = tns({
 // code adapted from and thanks to
 // https://codepen.io/bstonedev/pen/MWWZgKz
 const fadeElems = document.querySelectorAll(".has-fade");
-window.addEventListener('scroll', fadeIn);
+window.addEventListener('scroll', () => {fadeIn(); checkActiveNav();});
 function fadeIn () {
-  for (var i = 0; i < fadeElems.length; i++) {
+  for (let i = 0; i < fadeElems.length; i++) {
     let elem = fadeElems[i];
     let distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
     if (distInView < 0) {
@@ -50,6 +50,11 @@ function fadeIn () {
 }
 fadeIn();
 // end adapted code
+
+// const sections = document.querySelectorAll('section');
+// function checkActiveNav () {
+//   for (le)
+// }
 
 document.querySelector('#nameInput').addEventListener('keyup', checkSubmitEligibility);
 document.querySelector('#emailInput').addEventListener('keyup', checkSubmitEligibility);
@@ -70,4 +75,42 @@ function checkSubmitEligibility () {
   } else {
     submitBtn.disabled = true;
   }
+}
+
+function sendMail (event) {
+  event.preventDefault();
+
+  const name = document.getElementById('nameInput').value;
+  const email = document.getElementById('emailInput').value;
+  const type = document.getElementById('typeInput').value;
+  const size = document.getElementById('sizeInput').value;
+  const color = document.getElementById('colorInput').value;
+  const background = document.getElementById('backgroundInput').value;
+  const refImgs = document.getElementById('refImgsInput').value;
+  const specReqs = document.getElementById('specReqsInput').value;
+  const charName = document.getElementById('charNameInput').value;
+  const charDesc = document.getElementById('charDescInput').value;
+
+  const emailBody = `
+    <p>Name: ${name}</p>
+    <p>Email: ${email}</p>
+    <p>Type of Drawing: ${type}</p>
+    <p>Size: ${size}</p>
+    <p>Color: ${color}</p>
+    <p>Background: ${background}</p>
+    <p>Reference Image/s: ${refImgs}</p>
+    <p>Specific Request/s: ${specReqs}</p>
+    <p>Character Name: ${charName}</p>
+    <p>Character Description: ${charDesc}</p>
+  `;
+  
+  Email.send({
+    SecureToken: 'e9562325-46b4-4577-bd9d-804947d4ee3e',
+    To: 'kylemariangelo@gmail.com',
+    From: 'kylemariangelo@gmail.com',
+    Subject: `Art Commission Request from ${name}`,
+    Body: emailBody
+  }).then(
+    message => alert('art commission email sent successfully')
+  );
 }
