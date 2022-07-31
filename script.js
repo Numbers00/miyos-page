@@ -41,7 +41,6 @@ function fadeIn () {
   for (var i = 0; i < fadeElems.length; i++) {
     let elem = fadeElems[i];
     let distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
-    console.log(distInView);
     if (distInView < 0) {
       elem.classList.add("in-view");
     } else {
@@ -64,7 +63,7 @@ function checkSubmitEligibility () {
   const type = document.getElementById('typeInput').value;
   const size = document.getElementById('sizeInput').value;
   const color = document.getElementById('colorInput').value;
-  const background = document.getElementById('background').value;
+  const background = document.getElementById('backgroundInput').value;
   const submitBtn = document.getElementById('submit-btn');
   if (name && email && type && size && color && background) {
     submitBtn.disabled = false;

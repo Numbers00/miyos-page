@@ -23,72 +23,74 @@
         <div class="collapse navbar-collapse" id="navbarCollapsible">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="section" href="#">Carousel</a>
+              <a class="nav-link active" aria-current="section" href="#carouselSection">Carousel</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Introduction</a>
+              <a class="nav-link" href="#introductionSection">Introduction</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Drawings</a>
+              <a class="nav-link" href="#drawingsSection">Drawings</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Videos</a>
+              <a class="nav-link" href="#videosSection">Videos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">OCs</a>
+              <a class="nav-link" href="#ocsSection">OCs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#pricingSection">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Commission</a>
+              <a class="nav-link" href="#commissionSection">Commission</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contactSection">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div id="topCarousel" class="carousel slide" data-bs-ride="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <section id="carouselSection w-100">
+      <div id="topCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="imgs/caramel_arrow_cookie.png" class="d-block w-100" alt="Caramel Arrow Cookie">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Hi, I am Miyo!</h4>
+              <p class="fs-5">Welcome to my page, see info about my drawings, channel, and commission here</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="imgs/chibi_miyo.png" class="d-block w-100" alt="Chibi Miyo">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Click here to view my YouTube Channel</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="imgs/shijima_mei_of_the_art_room.png" class="d-block w-100" alt="Shijima Mei of the Art Room">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Click here to view info about my commissions</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#topCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#topCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="imgs/caramel_arrow_cookie.png" class="d-block w-100" alt="Caramel Arrow Cookie">
-          <div class="carousel-caption d-none d-md-block">
-            <h4 class="text-white">Hi, I am Miyo!</h4>
-            <p class="fs-5 text-white">Welcome to my page, see info about my drawings, channel, and commission here</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imgs/chibi_miyo.png" class="d-block w-100" alt="Chibi Miyo">
-          <div class="carousel-caption d-none d-md-block">
-            <p>Click here to view my YouTube Channel</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imgs/shijima_mei_of_the_art_room.png" class="d-block w-100" alt="Shijima Mei of the Art Room">
-          <div class="carousel-caption d-none d-md-block">
-            <p>Click here to view info about my commissions</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#topCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#topCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </section>
   </header>
   <main>
-    <section class="introduction-section bg-theme1 w-100 py-4">
+    <section id="introductionSection" class="introduction-section bg-theme1 w-100 py-4">
       <div class="container d-flex py-4">
         <div class="introduction-left-div d-flex flex-column justify-content-center me-4">
           <div class="icon-container bg-theme2 d-flex flex-column justify-content-center align-items-center">
@@ -114,7 +116,7 @@
         </div>
       </div>
     </section>
-    <section class="drawings-section w-100">
+    <section id="drawingsSection" class="drawings-section w-100">
       <div class="drawings-slider">
         <div class="drawing-container">
           <img src="imgs/chibi_miyo.png" class="drawing-img has-fade" alt="Chibi Miyo">
@@ -139,7 +141,7 @@
         </div>
       </div>
     </section>
-    <section class="videos-section">
+    <section id="videosSection" class="videos-section">
       <div class="videos-slider">
         <div class="video-container">
           <iframe class="video-iframe has-fade" src="https://www.youtube.com/embed/A-6QK6oDvgI" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
@@ -158,7 +160,7 @@
         </div>
       </div>
     </section>
-    <section class="ocs-section">
+    <section id="ocsSection" class="ocs-section">
       <div class="ocs-slider">
         <div class="oc-container">
           <img src="imgs/miyo_hinode_front_back.png" class="oc-img has-fade" alt="Miyo Hinode Front and Back">
@@ -171,7 +173,7 @@
         </div>
       </div>
     </section>
-    <section class="pricing-section bg-theme1 w-100 py-2">
+    <section id="pricingSection" class="pricing-section bg-theme1 w-100 py-2">
       <div class="container d-flex flex-column">
         <div class="section-info  mb-2">
           <h2 class="fw-bold">Pricing Examples</h2>
@@ -207,7 +209,7 @@
         </div>
       </div>
     </section>
-    <section class="commission-section w-100 py-2">
+    <section id="commissionSection" class="commission-section w-100 py-2">
       <div class="container d-flex flex-column">
         <div class="section-info mb-2">
           <h2 class="fw-bold">Commission Form</h2>
@@ -358,7 +360,7 @@
         </form>
       </div>
     </section>
-    <section class="contact-section bg-theme1 w-100 pt-2 pb-4">
+    <section id="contactSection" class="contact-section bg-theme1 w-100 pt-2 pb-4">
       <div class="container d-flex flex-column">
         <h2 class="fw-bold">Contact Details</h2>
         <p class="fs-5 mb-0">You can send me an email at azzuronbloodfall@gmail.com (temporary gmail),</p>
