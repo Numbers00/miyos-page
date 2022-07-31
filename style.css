@@ -44,6 +44,15 @@ body {
 .drawing-img {
   margin: 8px;
   width: calc(25vw - 16px);
+  -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+  transform: translateY(50px) rotate(-5deg) translateZ(0);
+  -webkit-transition-delay: .3s;
+  -o-transition-delay: .3s;
+  transition-delay: .3s;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  opacity: 0;
 }
 
 .videos-section {
@@ -60,6 +69,15 @@ body {
   margin: 8px;
   width: calc(29.6vw - 16px);
   height: calc(0.75 * (29.6vw - 16px));
+  -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+  transform: translateY(50px) rotate(-5deg) translateZ(0);
+  -webkit-transition-delay: .3s;
+  -o-transition-delay: .3s;
+  transition-delay: .3s;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  opacity: 0;
 }
 
 .ocs-section {
@@ -75,6 +93,15 @@ body {
 .oc-img {
   margin: 8px;
   width: calc(33vw - 16px);
+  -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+  transform: translateY(50px) rotate(-5deg) translateZ(0);
+  -webkit-transition-delay: .3s;
+  -o-transition-delay: .3s;
+  transition-delay: .3s;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  opacity: 0;
 }
 
 .oc-container {
@@ -88,6 +115,21 @@ body {
 .oc-info-img {
   margin: 8px;
   width: calc(59vw - 16px);
+  -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+  transform: translateY(50px) rotate(-5deg) translateZ(0);
+  -webkit-transition-delay: .3s;
+  -o-transition-delay: .3s;
+  transition-delay: .3s;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  opacity: 0;
+}
+
+.in-view {
+  opacity: 1;
+  -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+  transform: translateY(0px) rotate(0deg) translateZ(0);
 }
 
 .pricing-img {

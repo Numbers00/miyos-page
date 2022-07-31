@@ -32,3 +32,22 @@ const ocSlider = tns({
   nav: false,
   speed: 400
 });
+
+// code adapted from and thanks to
+// https://codepen.io/bstonedev/pen/MWWZgKz
+let elementsArray = document.querySelectorAll(".has-fade");
+window.addEventListener('scroll', fadeIn); 
+function fadeIn () {
+    for (var i = 0; i < elementsArray.length; i++) {
+        let elem = elementsArray[i];
+        let distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+        console.log(distInView);
+        if (distInView < 0) {
+            elem.classList.add("in-view");
+        } else {
+            elem.classList.remove("in-view");
+        }
+    }
+}
+fadeIn();
+// end adapted code
