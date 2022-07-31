@@ -148,4 +148,8 @@ body {
 .required-label::after {
   content: "*";
   color: red;
-} 
+}
+
+.submit-btn {
+  width: 420px;
+}
