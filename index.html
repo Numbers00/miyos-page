@@ -203,6 +203,149 @@
         </div>
       </div>
     </section>
+    <section class="commission-section w-100 py-2">
+      <div class="container d-flex flex-column">
+        <div class="section-info mb-2">
+          <h2 class="fw-bold">Commission Form</h2>
+          <p class="fs-5">
+            If you want to commission for a drawing do enter the required details in the form 
+            below and I'll contact you as soon as possible!
+          </p>
+        </div>
+        <form class="commission-form d-flex flex-column ps-4">
+          <div class="input-row w-100 d-flex justify-content-between mb-2">
+            <label for="nameInput" class="required-label fs-5 fw-bold">Name</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="nameInput" 
+              name="name"
+              placeholder="Miyo" 
+              required
+            >
+          </div>
+          <div class="input-row w-100 d-flex justify-content-between mb-2">
+            <label for="emailInput" class="required-label fs-5 fw-bold">Email Address</label>
+            <input 
+              type="email" 
+              class="form-control" 
+              id="emailInput" 
+              name="email" 
+              placeholder="miyo@gmail.com"
+              required
+            >
+          </div>
+          <div class="input-row w-100 d-flex justify-content-between mb-2">
+            <label for="typeInput" class="required-label fs-5 fw-bold">Type of Drawing</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="typeInput" 
+              name="type" 
+              placeholder="Fanart"
+              list="typeOptions" 
+              required
+            >
+            <datalist id="typeOptions">
+              <option value="Original Character">
+              <option value="Fanart">
+            </datalist>
+          </div>
+          <div class="input-row w-100 d-flex justify-content-between mb-2">
+            <label for="sizeInput" class="required-label fs-5 fw-bold">Drawing Size</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="sizeInput" 
+              name="size" 
+              placeholder="Full Body"
+              list="sizeOptions" 
+              required
+            >
+            <datalist id="sizeOptions">
+              <option value="Bust Up">
+              <option value="Upper Half">
+              <option value="Waist/Knee Up">
+              <option value="Full Body">
+            </datalist>
+          </div>
+          <div class="input-row w-100 d-flex justify-content-between mb-2">
+            <label for="colorInput" class="required-label fs-5 fw-bold">Color</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="colorInput" 
+              name="color" 
+              placeholder="Fully Colored"
+              list="colorOptions" 
+              required
+            >
+            <datalist id="colorOptions">
+              <option value="No Color">
+              <option value="Character Only">
+              <option value="Fully Colored">
+            </datalist>
+          </div>
+          <div class="input-row w-100 d-flex justify-content-between mb-2">
+            <label for="backgroundInput" class="required-label fs-5 fw-bold">Background</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="backgroundInput" 
+              name="background" 
+              placeholder="Has Background"
+              list="backgroundOptions" 
+              required
+            >
+            <datalist id="backgroundOptions">
+              <option value="No Background">
+              <option value="Has Background">
+            </datalist>
+          </div>
+          <div class="input-row w-100 d-flex justify-content-between mb-2">
+            <label for="refImgsInput" class="fs-5 fw-bold">Reference Image/s</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="refImgsInput" 
+              placeholder="https://cdn.oneesports.gg/cdn-data/2022/07/GenshinImpact_FischlSkin_EinImmernachtstraum_Outfit.jpg"
+              name="refImgs"
+            >
+          </div>
+          <div class="input-row w-100 d-flex justify-content-between mb-2">
+            <label for="specReqsInput" class="fs-5 fw-bold">Specific Request/s</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="specReqsInput" 
+              placeholder="A fanart of Fischl in her Ein Immernachstraum outfit, with the moon as background"
+              name="specReqs"
+            >
+          </div>
+          <div class="input-row w-100 d-flex justify-content-between mb-2">
+            <label for="charNameInput" class="fs-5 fw-bold">Character Name</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="charNameInput" 
+              name="charName"
+              placeholder="Fischl"
+            >
+          </div>
+          <div class="input-row w-100 d-flex justify-content-between mb-2">
+            <label for="charDescInput" class="fs-5 fw-bold">Character Description</label>
+            <textarea 
+              class="form-control" 
+              id="charDescInput" 
+              name="charDesc" 
+              placeholder="A mysterious girl who calls herself 'Prinzessin der Verurteilung' and travels with a night raven named Oz. Currently serves as an investigator in the Adventurers' Guild."
+              rows="3"
+            >
+            </textarea>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.js"></script>
   <script src="script.js" type="module"></script>

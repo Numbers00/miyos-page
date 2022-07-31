@@ -94,3 +94,16 @@ body {
   width: 320px;
   height: 320px;
 }
+
+.commission-form {
+  width: 800px;
+}
+
+.commission-form input, .commission-form textarea {
+  width: 420px;
+}
+
+.required-label::after {
+  content: "*";
+  color: red;
+} 
