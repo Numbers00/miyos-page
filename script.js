@@ -51,10 +51,26 @@ function fadeIn () {
 fadeIn();
 // end adapted code
 
-// const sections = document.querySelectorAll('section');
-// function checkActiveNav () {
-//   for (le)
-// }
+const sections = document.querySelectorAll('section');
+function checkActiveNav () {
+  for (let i = 0; i < sections.length; i++) {
+    let section = sections[i];
+    let sectionTop = section.offsetTop;
+    let sectionHeight = section.offsetHeight;
+    let scrollTop = window.pageYOffset;
+    if (scrollTop >= sectionTop && scrollTop < sectionTop + sectionHeight) {
+      let navLinks = document.querySelectorAll('.nav-link');
+      for (let j = 0; j < navLinks.length; j++) {
+        let navLink = navLinks[j];
+        if (navLink.getAttribute('href') === `#${section.id}`) {
+          navLink.classList.add('active');
+        } else {
+          navLink.classList.remove('active');
+        }
+      }
+    }
+  }
+}
 
 document.querySelector('#nameInput').addEventListener('keyup', checkSubmitEligibility);
 document.querySelector('#emailInput').addEventListener('keyup', checkSubmitEligibility);
