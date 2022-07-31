@@ -213,12 +213,17 @@
       <div class="container d-flex flex-column">
         <div class="section-info mb-2">
           <h2 class="fw-bold">Commission Form</h2>
-          <p class="fs-5">
+          <p class="fs-5" class="mb-0" style="color: red;">
             If you want to commission for a drawing do enter the required details in the form 
             below and I'll contact you as soon as possible!
           </p>
+          <p class="fs-5 mt-0">
+            The commission form below is currently not working, please use this commission form
+            <a href="https://forms.gle/yHgat7UjNLEbXRpu7" target="_blank" class="link-theme1">https://forms.gle/yHgat7UjNLEbXRpu7</a> 
+            instead.
+          </p>
         </div>
-        <form class="commission-form d-flex flex-column ps-4" action="javascript:sendMail();" method="post">
+        <form class="commission-form d-flex flex-column ps-4" method="post">
           <div class="input-row w-100 d-flex justify-content-between mb-2">
             <label for="nameInput" class="required-label fs-5 fw-bold">Name</label>
             <input 
@@ -228,6 +233,7 @@
               name="name"
               placeholder="Miyo" 
               required
+              disabled
             >
           </div>
           <div class="input-row w-100 d-flex justify-content-between mb-2">
@@ -239,6 +245,7 @@
               name="email" 
               placeholder="miyo@gmail.com"
               required
+              disabled
             >
           </div>
           <div class="input-row w-100 d-flex justify-content-between mb-2">
@@ -251,6 +258,7 @@
               placeholder="Fanart"
               list="typeOptions" 
               required
+              disabled
             >
             <datalist id="typeOptions">
               <option value="Original Character">
@@ -267,6 +275,7 @@
               placeholder="Full Body"
               list="sizeOptions" 
               required
+              disabled
             >
             <datalist id="sizeOptions">
               <option value="Bust Up">
@@ -285,6 +294,7 @@
               placeholder="Fully Colored"
               list="colorOptions" 
               required
+              disabled
             >
             <datalist id="colorOptions">
               <option value="No Color">
@@ -302,6 +312,7 @@
               placeholder="Has Background"
               list="backgroundOptions" 
               required
+              disabled
             >
             <datalist id="backgroundOptions">
               <option value="No Background">
@@ -316,6 +327,7 @@
               id="refImgsInput" 
               placeholder="https://cdn.oneesports.gg/cdn-data/2022/07/GenshinImpact_FischlSkin_EinImmernachtstraum_Outfit.jpg"
               name="refImgs"
+              disabled
             >
           </div>
           <div class="input-row w-100 d-flex justify-content-between mb-2">
@@ -326,6 +338,7 @@
               id="specReqsInput" 
               placeholder="A fanart of Fischl in her Ein Immernachstraum outfit, with the moon as background"
               name="specReqs"
+              disabled
             >
           </div>
           <div class="input-row w-100 d-flex justify-content-between mb-2">
@@ -336,6 +349,7 @@
               id="charNameInput" 
               name="charName"
               placeholder="Fischl"
+              disabled
             >
           </div>
           <div class="input-row w-100 d-flex justify-content-between mb-2">
@@ -346,11 +360,12 @@
               name="charDesc" 
               placeholder="A mysterious girl who calls herself 'Prinzessin der Verurteilung' and travels with a night raven named Oz. Currently serves as an investigator in the Adventurers' Guild."
               rows="3"
+              disabled
             ></textarea>
           </div>
           <div class="input-row w-100 d-flex justify-content-end mb-2">
             <button 
-              type="submit" 
+              type="button" 
               class="submit-btn btn btn-success"
               disabled
             >
@@ -363,8 +378,7 @@
     <section id="contactSection" class="contact-section bg-theme1 w-100 pt-2 pb-4">
       <div class="container d-flex flex-column">
         <h2 class="fw-bold">Contact Details</h2>
-        <p class="fs-5 mb-0">You can send me an email at azzuronbloodfall@gmail.com (temporary gmail),</p>
-        <p class="fs-5">or send me a private message on twitter @Miyo20963572</p>
+        <p class="fs-5">You can send me a private message on twitter @Miyo20963572</p>
         <div class="d-flex">
           <a href="https://www.youtube.com/channel/UCTY0ojjo0_Ev5Al-PnKP8Hw/videos" target="_blank">
             <img src="imgs/youtube_icon.png" class="small-icon me-2" alt="YouTube Icon">

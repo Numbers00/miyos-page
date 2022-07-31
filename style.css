@@ -25,6 +25,11 @@ body {
   background-color: #F1C8CF;
 }
 
+.link-theme1 {
+  text-decoration: none;
+  color: blue;
+}
+
 .icon-container {
   width: 264px;
   height: 264px;

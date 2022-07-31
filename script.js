@@ -77,7 +77,7 @@ document.querySelector('#emailInput').addEventListener('keyup', checkSubmitEligi
 document.querySelector('#typeInput').addEventListener('keyup', checkSubmitEligibility);
 document.querySelector('#sizeInput').addEventListener('keyup', checkSubmitEligibility);
 document.querySelector('#colorInput').addEventListener('keyup', checkSubmitEligibility);
-document.querySelector('#background').addEventListener('keyup', checkSubmitEligibility);
+document.querySelector('#backgroundInput').addEventListener('keyup', checkSubmitEligibility);
 function checkSubmitEligibility () {
   const name = document.getElementById('nameInput').value;
   const email = document.getElementById('emailInput').value;
@@ -85,7 +85,7 @@ function checkSubmitEligibility () {
   const size = document.getElementById('sizeInput').value;
   const color = document.getElementById('colorInput').value;
   const background = document.getElementById('backgroundInput').value;
-  const submitBtn = document.getElementById('submit-btn');
+  const submitBtn = document.querySelector('.submit-btn');
   if (name && email && type && size && color && background) {
     submitBtn.disabled = false;
   } else {
@@ -93,6 +93,7 @@ function checkSubmitEligibility () {
   }
 }
 
+document.querySelector('.submit-btn').addEventListener('click', sendMail);
 function sendMail (event) {
   event.preventDefault();
 
@@ -122,11 +123,13 @@ function sendMail (event) {
   
   Email.send({
     SecureToken: 'e9562325-46b4-4577-bd9d-804947d4ee3e',
-    To: 'kylemariangelo@gmail.com',
+    To: 'azzuronbloodfall@gmail.com',
     From: 'kylemariangelo@gmail.com',
     Subject: `Art Commission Request from ${name}`,
     Body: emailBody
   }).then(
     message => alert('art commission email sent successfully')
-  );
+  ).catch((error) => {
+    alert(error);
+  });
 }
