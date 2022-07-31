@@ -89,3 +89,8 @@ body {
   margin: 8px;
   width: calc(59vw - 16px);
 }
+
+.pricing-img {
+  width: 320px;
+  height: 320px;
+}
