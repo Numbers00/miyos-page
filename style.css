@@ -159,7 +159,7 @@ body {
   width: 420px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .introduction-contents {
     display: flex !important;
     flex-direction: column !important;
@@ -252,5 +252,34 @@ body {
 
   .pricing-img-info p {
     margin-bottom: 0 !important;
+  }
+
+  .commission-contents .section-info {
+    text-align: center;
+  }
+
+  .commission-form {
+    padding-left: 0 !important;
+    width: 540px !important;
+  }
+
+  .commission-form .input-row {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  
+  .commission-form input, .commission-form textarea {
+    width: 100% !important;
+  }
+
+  .submit-btn {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .commission-form {
+    width: 100% !important;
   }
 }
