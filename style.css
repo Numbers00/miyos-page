@@ -231,4 +231,26 @@ body {
     margin: 8px;
     width: calc(100vw - 16px);
   }
+
+  .pricing-contents .section-info p {
+    margin-bottom: 0px !important;
+  }
+
+  .pricing-example {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .pricing-img-container {
+    margin-top: 16px !important;
+  }
+
+  .pricing-img-info {
+    text-align: center !important;
+  }
+
+  .pricing-img-info p {
+    margin-bottom: 0 !important;
+  }
 }
