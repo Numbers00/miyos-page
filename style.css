@@ -8,7 +8,7 @@ body {
 
 #topCarousel .carousel-item {
   width: 100%;
-  height: 800px;
+  height: 78vh;
 }
 
 #topCarousel .carousel-item img {
@@ -157,4 +157,78 @@ body {
 
 .submit-btn {
   width: 420px;
+}
+
+@media screen and (max-width: 800px) {
+  .introduction-contents {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .introduction-left-div {
+    margin-bottom: 24px !important;
+  }
+  
+  .introduction-right-div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .drawings-section {
+    position: relative;
+    right: 50vw;
+    width: 200vw !important;
+  }
+
+  .drawing-img {
+    margin: 8px;
+    width: calc(50vw - 16px);
+  }
+  
+  .videos-section {
+    position: relative;
+    right: 68.4vw;
+    width: 236.8vw;
+  }
+  
+  .videos-slider {
+    width: 100%;
+  }
+  
+  .video-iframe {
+    margin: 8px;
+    width: calc(59.2vw - 16px);
+    height: calc(0.75 * (59.2vw - 16px));
+  }
+  
+  .ocs-section {
+    position: relative;
+    right: 59.4vw;
+    width: 218.8vw;
+  }
+  
+  .ocs-slider {
+    width: 100%;
+  }
+
+  .oc-container {
+    width: 55.9vw !important;
+  }
+  
+  .oc-img {
+    margin: 8px;
+    width: calc(55.9vw - 16px);
+  }
+  
+  .oc-info-container {
+    width: 100vw !important;
+  }
+
+  .oc-info-img {
+    margin: 8px;
+    width: calc(100vw - 16px);
+  }
 }
