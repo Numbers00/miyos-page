@@ -236,6 +236,10 @@ body {
     width: calc(100vw - 16px);
   }
 
+  .pricing-contents .section-info {
+    text-align: center;
+  }
+
   .pricing-contents .section-info p {
     margin-bottom: 0px !important;
   }
