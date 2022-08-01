@@ -4,6 +4,7 @@
 
 body {
   overflow-x: hidden !important;
+  width: 100vw !important;
 }
 
 #topCarousel .carousel-item {
@@ -253,6 +254,8 @@ body {
 
   .pricing-img-container {
     margin-top: 16px !important;
+    display: block !important;
+    margin: auto !important;
   }
 
   .pricing-img-info {
