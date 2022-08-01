@@ -160,6 +160,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+
   .introduction-contents {
     display: flex !important;
     flex-direction: column !important;
@@ -275,6 +279,13 @@ body {
 
   .submit-btn {
     width: 100% !important;
+  }
+
+  .contact-contents {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
   }
 }
 
