@@ -123,7 +123,7 @@ function sendMail (event) {
   
   Email.send({
     SecureToken: 'e9562325-46b4-4577-bd9d-804947d4ee3e',
-    To: 'azzuronbloodfall@gmail.com',
+    To: 'rosymiyo8@gmail.com',
     From: 'kylemariangelo@gmail.com',
     Subject: `Art Commission Request from ${name}`,
     Body: emailBody
