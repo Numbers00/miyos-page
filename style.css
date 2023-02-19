@@ -50,6 +50,8 @@ body {
 .drawing-img {
   margin: 8px;
   width: calc(25vw - 16px);
+  height: calc(25vw - 16px);
+  object-fit: cover;
   -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
   transform: translateY(50px) rotate(-5deg) translateZ(0);
   -webkit-transition-delay: .3s;
