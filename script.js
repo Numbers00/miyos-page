@@ -51,8 +51,37 @@ function fadeIn () {
 fadeIn();
 // end adapted code
 
+// window.onload = async () => {
+//   let drawings = [];
+//   await fetch('drawings.json')
+//     .then(response => response.json())
+//     .then(data => drawings = data)
+//     .catch(err => console.log(err));
+
+//   // Randomize the order of drawings using Fisher-Yates shuffle algorithm
+//   for (let i = drawings.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [drawings[i], drawings[j]] = [drawings[j], drawings[i]];
+//   }
+
+//   const drawingSlider = document.querySelector('.drawings-slider');
+//   for (let i = 0; i < drawings.length; i++) {
+//     const drawing = drawings[i];
+//     const drawingElem = document.createElement('div');
+//     drawingElem.classList.add('drawing-container');
+
+//     const drawingImg = document.createElement('img');
+//     drawingImg.src = drawing.src;
+//     drawingImg.alt = drawing.alt;
+//     drawingImg.classList.add('drawing-img', 'has-fade');
+    
+//     drawingElem.appendChild(drawingImg);
+//     drawingSlider.appendChild(drawingElem);
+//   }
+// };
+
 const sections = document.querySelectorAll('section');
-function checkActiveNav () {
+const checkActiveNav = () => {
   for (let i = 0; i < sections.length; i++) {
     let section = sections[i];
     let sectionTop = section.offsetTop;
@@ -72,13 +101,7 @@ function checkActiveNav () {
   }
 }
 
-document.querySelector('#nameInput').addEventListener('keyup', checkSubmitEligibility);
-document.querySelector('#emailInput').addEventListener('keyup', checkSubmitEligibility);
-document.querySelector('#typeInput').addEventListener('keyup', checkSubmitEligibility);
-document.querySelector('#sizeInput').addEventListener('keyup', checkSubmitEligibility);
-document.querySelector('#colorInput').addEventListener('keyup', checkSubmitEligibility);
-document.querySelector('#backgroundInput').addEventListener('keyup', checkSubmitEligibility);
-function checkSubmitEligibility () {
+const checkSubmitEligibility = () => {
   const name = document.getElementById('nameInput').value;
   const email = document.getElementById('emailInput').value;
   const type = document.getElementById('typeInput').value;
@@ -91,10 +114,15 @@ function checkSubmitEligibility () {
   } else {
     submitBtn.disabled = true;
   }
-}
+};
+document.querySelector('#nameInput').addEventListener('keyup', checkSubmitEligibility);
+document.querySelector('#emailInput').addEventListener('keyup', checkSubmitEligibility);
+document.querySelector('#typeInput').addEventListener('keyup', checkSubmitEligibility);
+document.querySelector('#sizeInput').addEventListener('keyup', checkSubmitEligibility);
+document.querySelector('#colorInput').addEventListener('keyup', checkSubmitEligibility);
+document.querySelector('#backgroundInput').addEventListener('keyup', checkSubmitEligibility);
 
-document.querySelector('.submit-btn').addEventListener('click', sendMail);
-function sendMail (event) {
+const sendMail = (event) => {
   event.preventDefault();
 
   const name = document.getElementById('nameInput').value;
@@ -132,4 +160,5 @@ function sendMail (event) {
   ).catch((error) => {
     alert(error);
   });
-}
+};
+document.querySelector('.submit-btn').addEventListener('click', sendMail);
